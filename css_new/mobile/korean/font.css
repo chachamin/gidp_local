@@ -1,0 +1,39 @@
+@charset "utf-8";
+@font-face
+{
+font-family: 'nsk';
+font-style: normal;
+font-weight: 400;
+src: url(../../font/NotoSansKR-Regular.woff2) format('woff2'),
+url(../../font/NotoSansKR-Regular.woff) format('woff'),
+url(../../font/NotoSansKR-Regular.otf) format('opentype');
+}
+
+@font-face
+{
+font-family: 'nsk';
+font-style: normal;
+font-weight: 500;
+src: url(../../font/NotoSansKR-Medium.woff2) format('woff2'),
+url(../../font/NotoSansKR-Medium.woff) format('woff'),
+url(../../font/NotoSansKR-Medium.otf) format('opentype');
+}
+
+@font-face
+{font-family: 'llato';
+font-style: normal;
+font-weight: 400;
+src: url(../../font/Lato-Regular.woff2) format('woff2'),
+url(../../font/Lato-Regular.woff) format('woff'),
+url(../../font/Lato-Regular.ttf) format('opentype');
+}
+
+
+@font-face
+{font-family: 'llato';
+font-style: normal;
+font-weight: 500;
+src: url(../../font/Lato-Bold.woff2) format('woff2'),
+url(../../font/Lato-Bold.woff) format('woff'),
+url(../../font/Lato-Bold.ttf) format('opentype');
+}
