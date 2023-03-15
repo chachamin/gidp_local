@@ -2,7 +2,22 @@
 @import url("default.css");
 @import url("layout.css");
 
+
+.ir_pm {display: block;overflow: hidden;font-size: 0;line-height: 0;text-indent: -9999px;}
+.int_inner {width: 1440px;margin: 0 auto;}
+
 #introPG {width: 100vw;height: 100vw;}
 
+
 /* intHeader */
+.intheader_wrap {margin: 80px auto 0;display: flex;}
+.intheader_wrap .int_logo_box a {display: block;width: 224px;height: 54px;background: url(/images/korean/common_gidp/ir.png) no-repeat -246px 0px;}
+.intheader_wrap .int_gnb_box{margin-left: 20px;} 
+.intheader_wrap .int_gnb_box ul {display: flex;}
+.intheader_wrap .int_gnb_box ul li a {padding: 15px;}
+
+.intcont_wrap {display: flex;}
+.intcont_wrap .left_wrap {width: calc((100% / 3) * 2);background: gold;}
+.intcont_wrap .right_wrap {width: calc((100% / 3) * 2);background: green;}
+
 
