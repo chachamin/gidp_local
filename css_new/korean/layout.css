@@ -1,0 +1,83 @@
+@charset "utf-8";
+.inner{position:relative;max-width:1280px;min-width:1280px;width:1280px; margin:0 auto; box-sizing:border-box}
+
+/*header*/
+#header{border-bottom:1px solid #ddd;position:absolute;top:0;width:100%;height:140px;z-index:910;background-color:#fff;animation:hfadein 2s;}
+#header .head_title h1 a{display:block;position:absolute;left:0;top:74px;width:224px; height:54px; font-size:0; background:url('/images/korean/common_gidp/ir.png') no-repeat -246px 0px;transition:unset;z-index:50}
+.util_nav{font-size:13px;padding-top:20px !important;height:50px;}
+.util_nav a:hover{text-decoration:underline}
+.util_nav .fl a,
+.util_nav .fr > ul > li{padding-right:21px;position:relative}
+.util_nav .fl a:after,
+.util_nav .fr > ul > li:after{content:'';display:inline-block;position:absolute;right:10px;top:1px;height:10px;width:1px;background:#e4e4e4;}
+.util_nav .fl a:last-child:after,
+.util_nav .fr > ul > li:last-child:after{display:none}
+.util_nav .fr > ul{display:inline-block;vertical-align: middle;}
+.util_nav .fr > ul > li {float:left;}
+.util_nav .fr > ul > li.screen_w .ico{border:1px solid #000;width:16px;height:16px;margin-right:-4px;vertical-align:bottom;font-size:0 !important;}
+.util_nav .search{display:inline-block;border-bottom:1px solid #000}
+.util_nav .search input{border:0;padding:4px;background:transparent;}
+.util_nav .ico.ico_01{background-position:-139px -62px;transition:unset}
+.util_nav .ico.ico_02{background-position:-174px -62px;transition:unset}
+.util_nav .ico.ico_03{width:16px;height:16px;background-position:-217px -62px;margin-right:5px}
+.util_nav .ico.ico_04{font-size:0 !important;width:20px;height:20px;background-position:-294px -60px;transition:unset}
+
+/* gnb */
+#gnb{width:100%;position:relative;}
+#gnb > ul{padding-left:270px;}
+#gnb > ul > .depth1{display:inline-block;width:16.6%;margin-left:-3px;box-sizing:border-box;text-align:center;}
+/* #gnb > ul > .depth1 > a{position:relative;display:block;padding:38px 0 31px;font-size:1.188em;font-weight:500;} 230313 web*/
+#gnb > ul > .depth1 > a{position:relative;display:block;padding:38px 0 28px;font-size:1.188em;font-weight:500;}
+#gnb > ul > .depth1 > a:hover,#gnb > ul > .depth1.hover > a{color:#e5004b}
+#gnb > ul > .depth1 > a:before,#gnb > ul > .depth1 > a:after{content: '';position: absolute;transition: transform .2s ease;}
+#gnb > ul > .depth1 > a:before {content:'';position: absolute;left: 0;bottom: 0;width: 100%;height: 3px;background: #e5004b;;transform: scaleX(0);}
+#gnb > ul > .depth1:hover > a:before {transform: scaleX(1);}
+#gnb .depth2Wrap{display:none;position:absolute;top:89px;left:0;width:100%;height:170px;padding:0;text-align:left;font-weight:normal;z-index:999}
+#gnb .depth2Wrap .depth2_tit{position:absolute;left:0;top:40px;font-size:1.25em;font-weight:500}
+#gnb .depth2Wrap .depth2_tit:after{content:'';width:8px;height:8px;display:inline-block;border:solid #000;border-width:2px 2px 0 0;transform:rotate(45deg);vertical-align:middle;margin-top:-4px}
+#gnb .depth2Wrap .dep_2{position:relative;margin-left:256px;border-left:1px solid #ddd;height:100%}
+#gnb .depth1 > .depth2Wrap .depth2{overflow:hidden;width:100%;padding:26px 0 16px 50px;}
+#gnb .depth1 > .depth2Wrap .depth2 > li{float:left;width:24.5%;position:relative}
+#gnb .depth1 > .depth2Wrap .depth2 > li > a{position:relative;height:40px;padding:10px 0;display:block;font-size:1.07em;width:100%;}
+#gnb .depth1 > .depth2Wrap .depth2 > li > a:after{content:'';width:6px;height:6px;display:inline-block;border:solid #ccc;border-width:1px 1px 0 0;transform:rotate(45deg);vertical-align:middle;margin:-2px 0 0 12px}
+#gnb .depth1 > .depth2Wrap .depth2 > li > a:hover,#gnb .depth1 > .depth2Wrap .depth2 > li > a:focus{color:#e5004b;font-weight:500}
+#gnb .depth1 > .depth2Wrap .depth2 > li > a:hover:after,#gnb .depth1 > .depth2Wrap .depth2 > li > a:focus:after{border-color:#e5004b}
+#gnb .depth1 > .depth2Wrap .gnb_banner{padding:0px 0 0 50px}
+#gnb .depth1 > .depth2Wrap .gnb_banner a{position:relative;width:48%;background:#f2f2f2;padding:32px 0 32px 160px}
+#gnb .depth1 > .depth2Wrap .gnb_banner a:before{content:'';position:absolute;left:20px;top:10px;width:102px;height:78px;background:url("/images/korean/common_gidp/ir.png") 18px -190px no-repeat;}
+#gnb .depth1 > .depth2Wrap .gnb_banner a.gnb_b02:before{width:110px;background-position:-88px -178px}
+#gnb .depth1 > .depth2Wrap .gnb_banner a p.fb{font-size:1.07em;margin-bottom:10px}
+#gnb .depth2Wrap .fr{position:relative;width:40%;border:solid #ddd;border-width:0 1px;height:100%;padding:40px;}
+
+.tmnBg{display:none;position:absolute;left:0;top:89px;width:100%;height:170px;border:solid #ddd;border-width:1px 0;background:#fff;z-index:405}
+
+/*header_ov*/
+#header.header_ov{border-bottom:1px solid rgba(255, 225, 225, .5); background-color:transparent;color:#fff !important}
+#header.header_ov .head_title h1 a{background-position:-10px 0px;}
+#header.header_ov .util_nav .fr > ul > li.screen_w .ico{border:1px solid #fff;}
+#header.header_ov .util_nav .search{display:inline-block;border-bottom:1px solid #fff}
+#header.header_ov .util_nav .search input::placeholder{color:#fff;opacity:0.7}
+#header.header_ov .util_nav .ico.ico_01{background-position:-122px -62px}
+#header.header_ov .util_nav .ico.ico_02{background-position:-156px -62px}
+#header.header_ov .util_nav .ico.ico_03{background-position:-194px -62px}
+#header.header_ov .util_nav .ico.ico_04{background-position:-240px -60px}
+#header.header_ov .util_nav .search input,#header.header_ov #gnb > ul > .depth1 > a{color:#fff}
+
+#header.sticky {position: fixed !important;top: 0px;width: 100% !important;z-index: 500;background:#fff !important;color:#000 !important;box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.1);height:90px;}
+#header.sticky .head_title h1 a{top:18px;background-position: -246px 0px;}
+#header.sticky .util_nav{display:none}
+#header.sticky  #gnb > ul > .depth1 > a{color:#000 !important;}
+
+/*footer*/
+#footer{background:#1b1919;color:#bbb;}
+#footer .foot_top{height:60px;background:#131111}
+#footer .foot_top ul li{float:left;height:60px;width:174px;border-left:1px solid #2a2929;text-align:center;line-height:60px}
+#footer .foot_top ul li a{display:block;}
+#footer .foot_top ul li a:hover{color:#fff}
+#footer .foot_top ul li:last-child{border-right:1px solid #2a2929;}
+#footer .foot_bottom{padding:50px 0 80px}
+#footer .foot_bottom .copy{position:relative;padding-left:112px;line-height:1.8;font-size:0.8em}
+#footer .foot_bottom .copy:before{content:'';position:absolute;display:inline-block;left:0;top:0;width:84px;height:54px;background:url("/images/korean/common_gidp/ir.png") -10px -55px no-repeat;opacity:.4}
+#footer .foot_bottom .accessibility_mark{position:absolute;display:block;right:0;top:0}
+
+@keyframes hfadein {0% {margin-top:-20px; opacity: 0; } 50%{ margin-top:0px; opacity: .5; } 100%{ margin-top:0px; opacity: 1; }}
