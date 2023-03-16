@@ -54,3 +54,7 @@ $(document).ready(function(){
 
 
 });
+
+function intClose() {
+	$("#introPg").css("display","none");
+}
